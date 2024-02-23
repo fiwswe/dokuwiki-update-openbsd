@@ -22,6 +22,7 @@ TMP_DW='dokuwiki'
 DEST_DIR='/var/www/my-wiki-root/'
 WEB_USER='www'
 WEB_GROUP='daemon'
+DEFAULT_OWNER='root:bin'
  
 # Make sure we are running with root permissions:
 ME=`whoami`
@@ -74,7 +75,7 @@ cd "$TMP_DW"
 # installed plugins or templates.
 echo '# Setting DokuWiki access rights…'
 # Start out with minimum rights (no rights for the web server):
-chown -R root:bin .
+chown -R "$DEFAULT_OWNER" .
  
 # Pattern the access rights on those of the dokuwiki port:
 find . -type d -exec chown :"$WEB_GROUP" {} +
