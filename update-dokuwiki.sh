@@ -50,9 +50,9 @@ fi
 # Make sure the destination directory exists:
 if [ ! -d "$DEST_DIR" ]; then
 	echo "### $0: FATAL ERROR!"
-        echo "### Sorry, the destination directory (${DEST_DIR}) does not exist."
+	echo "### Sorry, the destination directory (${DEST_DIR}) does not exist!"
 	echo '### Did you maybe forget to adjust this script to your setup?'
- 
+
 	exit 1
 fi
 
