@@ -8,11 +8,13 @@ It can be configured to update [DokuWiki](https://dokuwiki.org) instances in non
 
 **IMPORTANT:** Please modify the marked values (`DEST_DIR`, `WEB_USER`, `WEB_GROUP`, `DEFAULT_OWNER`) in your copy of the script to conform to your setup before executing it! If your [DokuWiki](https://dokuwiki.org) instance lives in `/var/www` then you probably only need to change `DEST_DIR`.
 
-**Note:** It is a good idea to invalidate the [DokuWiki](https://dokuwiki.org) caches after an update. Just open and save the configuration settings in [DokuWiki](https://dokuwiki.org) once to get this done.
+## Notes
+* It is a good idea to invalidate the [DokuWiki](https://dokuwiki.org) caches after an update. Just open and save the configuration settings in [DokuWiki](https://dokuwiki.org) once to get this done.
 
 ## See also
 * [Updating DokuWiki on OpenBSD](https://www.fiwswe.de/doku.php?id=blog:updating_dokuwiki_on_openbsd) has more information and reasons for using this script instead of other methods of updating [DokuWiki](https://dokuwiki.org).
 * [Upgrading DokuWiki](https://www.dokuwiki.org/install:upgrade) has general upgrading instructions.
 
 ---
+## Usage on Non-OpenBSD OSes
 With some adjustments a similar script may also work on other UN*X operating systems.
