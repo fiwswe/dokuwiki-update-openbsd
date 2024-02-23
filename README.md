@@ -11,6 +11,7 @@ It can be configured to update [DokuWiki](https://dokuwiki.org) instances in non
 **Note:** It is a good idea to invalidate the [DokuWiki](https://dokuwiki.org) caches after an update. Just open and save the configuration settings in [DokuWiki](https://dokuwiki.org) once to get this done.
 
 See [Updating DokuWiki on OpenBSD](https://www.fiwswe.de/doku.php?id=blog:updating_dokuwiki_on_openbsd) for more information and reasons for using this script instead of other methods of updating [DokuWiki](https://dokuwiki.org).
+See also [Upgrading DokuWiki](https://www.dokuwiki.org/install:upgrade) for general upgrading instructions.
 
 ---
 With some adjustments a similar script may also work on other UN*X operating systems.
