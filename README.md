@@ -6,6 +6,8 @@ Tested on [OpenBSD 7.3](https://openbsd.org/73.html) and [OpenBSD 7.4](https://o
 
 It can be configured to update [DokuWiki](https://dokuwiki.org) instances in non default locations, i.e. locations different than `/var/www/dokuwiki`.
 
+**IMPORTANT:** Please modify the marked values (`DEST_DIR`, `WEB_USER`, `WEB_GROUP`, `DEFAULT_OWNER`) in your copy of the script to conform to your setup before executing it! If your [DokuWiki](https://dokuwiki.org) instance lives in `/var/www` then you probably only need to change `DEST_DIR`.
+
 **Note:** It is a good idea to invalidate the [DokuWiki](https://dokuwiki.org) caches after an update. Just open and save the configuration settings in [DokuWiki](https://dokuwiki.org) once to get this done.
 
 See [Updating DokuWiki on OpenBSD](https://www.fiwswe.de/doku.php?id=blog:updating_dokuwiki_on_openbsd) for more information and reasons for using this script instead of other methods of updating [DokuWiki](https://dokuwiki.org).
