@@ -16,5 +16,5 @@ It can be configured to update [DokuWiki](https://dokuwiki.org) instances in non
 * [Upgrading DokuWiki](https://www.dokuwiki.org/install:upgrade) has general upgrading instructions.
 
 ---
-## Usage on Non-OpenBSD OSes
+## Usage on non-OpenBSD OSes
 With some adjustments a similar script may also work on other UN*X operating systems.
