@@ -107,7 +107,7 @@ if [ ! -d "$DEST_DIR" ]; then
 	$CMD_ECHO "### $0: INFO:"
 	$CMD_ECHO "### The destination directory (${DEST_DIR}) does not exist!"
 	$CMD_ECHO '### Did you forget to adjust this script to your setup?'
-	$CMD_ECHO '### This will install a new copy of DokuWiki into ${DEST_DIR}.'
+	$CMD_ECHO "### This will install a new copy of DokuWiki into ${DEST_DIR}."
 fi
 
 
@@ -162,6 +162,7 @@ $CMD_FIND data/pages -type f -exec $CMD_CHMOD 644 {} +
 # Create the destination if it doesn't yet exist as would happen for
 # first installing DokuWiki:
 if [ ! -d "$DEST_DIR" ];then
+	$CMD_ECHO '# Creating the destination directory…'
 	$CMD_INSTALL -do $DEFAULT_OWNER -g $WEB_GROUP "$DEST_DIR"
 fi
 
